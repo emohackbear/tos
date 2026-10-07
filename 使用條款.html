@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用條款與免責聲明 - 授權協議</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            900: '#0b0f19',
+                            800: '#111827',
+                            700: '#1f2937',
+                            600: '#374151'
+                        },
+                        accent: {
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            glow: 'rgba(99, 102, 241, 0.3)'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            background-color: #0b0f19;
+            color: #f3f4f6;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111827;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #374151;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4f46e5;
+        }
+        .glass-panel {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glow-accent {
+            box-shadow: 0 0 25px rgba(99, 102, 241, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+    <header class="sticky top-0 z-40 w-full glass-panel border-b border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center justify-between gap-2">
+            <div class="flex items-center space-x-3 text-white text-sm sm:text-base font-medium whitespace-nowrap overflow-hidden text-ellipsis">
+                <span>使用條款與用戶協議</span>
+            </div>
+            <div class="flex items-center space-x-2 text-xs text-gray-400">
+                <span class="px-2 py-1 rounded bg-gray-800 border border-gray-700">最後更新時間：2026/10/07 上午09:00</span>
+                <button id="discord-modal-open" class="px-2 py-1 rounded bg-indigo-950/60 text-indigo-300 border border-indigo-800/50 hover:bg-indigo-900/80 transition flex items-center space-x-1 cursor-pointer">
+                    <i class="fa-brands fa-discord"></i>
+                    <span>加入開發者 Discord 伺服器</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl w-full mx-auto px-4 py-10 flex-grow">
+        <div class="text-center mb-10">
+            <div class="inline-flex p-3 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 mb-4 glow-accent">
+                <i class="fa-solid fa-shield-halved text-3xl"></i>
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-3">使用條款與用戶協議</h1>
+            <div class="max-w-2xl mx-auto space-y-2">
+                <p class="text-amber-400 text-sm sm:text-base font-medium flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-triangle-exclamation animate-pulse"></i>
+                    <span>請務必仔細閱讀以下各項條款。本協議構成您與開發團隊之間的法律約束。</span>
+                </p>
+                <p class="text-gray-400 text-xs sm:text-sm">
+                    若後續有更改或更新 將不另外公告 請使用前確認最後更新時間 是否有所變動是否已閱讀
+                </p>
+            </div>
+        </div>
+
+        <div class="space-y-6">
+            <!-- Article 1 -->
+            <section id="article-1" class="glass-panel p-6 rounded-2xl border border-gray-800 hover:border-indigo-500/30 transition shadow-lg">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 font-bold">
+                        01
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-white mb-2 flex items-center">
+                            免責聲明與風險承擔
+                        </h2>
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                            本輔助工具若使用後遊戲帳號遭受到官方人員停權、封鎖、回收或產生任何形式之虛擬資產損失，開發團隊將概不負責，所有風險與後果均需由使用者自行承擔。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Article 2 -->
+            <section id="article-2" class="glass-panel p-6 rounded-2xl border border-gray-800 hover:border-indigo-500/30 transition shadow-lg">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 font-bold">
+                        02
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-white mb-2 flex items-center">
+                            硬體識別碼 (HWID) 綁定與重製政策
+                        </h2>
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                            本工具採用硬體識別碼（HWID）綁定授權。HWID 一旦綁定完成，開發者不一定需要滿足使用者的重製操作要求。因硬體更換、重灌系統等原因產生的重製請求，開發團隊保留最終審核與拒絕權利。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Article 3 -->
+            <section id="article-3" class="glass-panel p-6 rounded-2xl border border-gray-800 hover:border-indigo-500/30 transition shadow-lg">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 font-bold">
+                        03
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-white mb-2 flex items-center">
+                            誤判免責與解鎖權利
+                        </h2>
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                            若使用者在運行本工具的同時，開啟或背景執行其他破解工具、外掛程式而遭到系統判定或封鎖，即使屬於誤判情況，開發者亦有權利非一定要協助解鎖或恢復授權。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Article 4 -->
+            <section id="article-4" class="glass-panel p-6 rounded-2xl border border-gray-800 hover:border-indigo-500/30 transition shadow-lg">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 font-bold">
+                        04
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-white mb-2 flex items-center">
+                            嚴格禁止逆向工程
+                        </h2>
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                            使用者嚴禁對本工具進行任何形式之反向工程（Reverse Engineering）、反編譯（Decompilation）、破解（Crack）、修改、掛鉤（Hook）或攔截通訊封包。違者將立即終止授權並永久列入黑名單。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Article 5 -->
+            <section id="article-5" class="glass-panel p-6 rounded-2xl border border-gray-800 hover:border-indigo-500/30 transition shadow-lg">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 font-bold">
+                        05
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-white mb-2 flex items-center">
+                            嚴禁外流、轉售與轉讓
+                        </h2>
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                            使用者不得將本工具檔案、下載連結、授權序號或登入憑證外流、分享、公開散布或轉售予任何第三方。所有授權僅限購買者本人使用，違者依法追究相關民刑事責任。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Article 6 -->
+            <section id="article-6" class="glass-panel p-6 rounded-2xl border border-gray-800 hover:border-indigo-500/30 transition shadow-lg">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 font-bold">
+                        06
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-white mb-2 flex items-center">
+                            申訴機制
+                        </h2>
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                            若遭到誤判或者任何問題 可以開單進行申訴 申訴最終決定結果由開發者與管理員 進行調整
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Article 7 -->
+            <section id="article-7" class="glass-panel p-6 rounded-2xl border border-gray-800 hover:border-indigo-500/30 transition shadow-lg">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 font-bold">
+                        07
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-xl font-semibold text-white mb-2 flex items-center">
+                            最終解釋權與保留條款
+                        </h2>
+                        <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                            開發團隊與管理員擁有最終解釋權 討論後有權利 以上方未列出條款進行封鎖
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="w-full border-t border-gray-800 bg-gray-950 py-6 mt-16">
+        <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+            <!-- Left Developer (emo熊🧸) -->
+            <div class="flex items-center space-x-3">
+                <img src="https://cdn.discordapp.com/avatars/1125772173785706606/8be114435bab3eb0a47f2aaf6c3d5838.webp?size=1024" alt="emo熊🧸" class="w-10 h-10 rounded-full border border-indigo-500/30 object-cover">
+                <div>
+                    <div class="font-semibold text-white flex items-center space-x-1.5 flex-wrap gap-1">
+                        <span>emo熊🧸</span>
+                        <span class="text-[10px] bg-indigo-500/20 text-indigo-300 px-1.5 py-0.5 rounded border border-indigo-500/30">開發者</span>
+                        <span class="text-[10px] bg-purple-500/20 text-purple-300 px-1.5 py-0.5 rounded border border-purple-500/30">管理員</span>
+                    </div>
+                    <div class="text-gray-500 text-[11px]">@emo_bear_hack</div>
+                </div>
+            </div>
+
+            <!-- Right Developer (! ! SkyWars Noob TW) -->
+            <div class="flex items-center space-x-3">
+                <div class="text-left sm:text-right">
+                    <div class="font-semibold text-white flex items-center sm:justify-end space-x-1.5 flex-wrap gap-1">
+                        <span>! ! SkyWars Noob TW</span>
+                        <span class="text-[10px] bg-amber-500/20 text-amber-300 px-1.5 py-0.5 rounded border border-amber-500/30">老闆</span>
+                        <span class="text-[10px] bg-indigo-500/20 text-indigo-300 px-1.5 py-0.5 rounded border border-indigo-500/30">開發者</span>
+                        <span class="text-[10px] bg-purple-500/20 text-purple-300 px-1.5 py-0.5 rounded border border-purple-500/30">管理員</span>
+                    </div>
+                    <div class="text-gray-500 text-[11px]">@skywars_noob.tw</div>
+                </div>
+                <img src="https://cdn.discordapp.com/avatars/1072411470727483482/469681ee3d3fa8103bbd4bfd36314131.webp?size=1024" alt="! ! SkyWars Noob TW" class="w-10 h-10 rounded-full border border-amber-500/30 object-cover">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" aria-label="回到頂部" class="fixed bottom-6 right-6 w-12 h-12 rounded-full glass-panel border border-indigo-500/30 text-indigo-400 flex items-center justify-center shadow-xl opacity-0 translate-y-4 pointer-events-none transition-all duration-300 z-50 hover:bg-indigo-600 hover:text-white">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Discord Selection Modal -->
+    <div id="discord-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="glass-panel p-6 sm:p-8 rounded-2xl max-w-md w-full mx-4 border border-indigo-500/40 transform scale-95 transition-transform duration-300 shadow-2xl" id="discord-modal-content">
+            <div class="flex items-center justify-between mb-6">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 rounded-xl flex items-center justify-center text-xl">
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">加入開發者 Discord 伺服器</h3>
+                </div>
+                <button id="discord-modal-close" class="text-gray-400 hover:text-white transition">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+            
+            <div class="space-y-3">
+                <!-- Option 1 -->
+                <a href="https://discord.gg/x3b3bvBGxg" target="_blank" rel="noopener noreferrer" class="block p-4 rounded-xl bg-gray-800/60 hover:bg-indigo-600/20 border border-gray-700/60 hover:border-indigo-500/40 transition group">
+                    <div class="flex items-center justify-between">
+                        <span class="font-semibold text-white group-hover:text-indigo-300 transition">加入 EMOBEAR🧸 的 Discord 伺服器</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-gray-500 group-hover:text-indigo-400"></i>
+                    </div>
+                </a>
+
+                <!-- Option 2 -->
+                <a href="https://discord.gg/wymQKsgaft" target="_blank" rel="noopener noreferrer" class="block p-4 rounded-xl bg-gray-800/60 hover:bg-indigo-600/20 border border-gray-700/60 hover:border-indigo-500/40 transition group">
+                    <div class="flex items-center justify-between">
+                        <span class="font-semibold text-white group-hover:text-indigo-300 transition">加入 SWN PANEL 的 Discord 伺服器</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-gray-500 group-hover:text-indigo-400"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToTopBtn = document.getElementById('back-to-top');
+            const discordModal = document.getElementById('discord-modal');
+            const discordModalContent = document.getElementById('discord-modal-content');
+            const discordModalOpen = document.getElementById('discord-modal-open');
+            const discordModalClose = document.getElementById('discord-modal-close');
+
+            // Scroll back-to-top button visibility
+            window.addEventListener('scroll', () => {
+                const currentScroll = window.scrollY;
+                if (currentScroll > 300) {
+                    backToTopBtn.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+                } else {
+                    backToTopBtn.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+                }
+            });
+
+            // Back to top action
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Open Discord Modal
+            discordModalOpen.addEventListener('click', () => {
+                discordModal.classList.remove('opacity-0', 'pointer-events-none');
+                discordModalContent.classList.remove('scale-95');
+                discordModalContent.classList.add('scale-100');
+            });
+
+            // Close Discord Modal
+            const closeDiscordModal = () => {
+                discordModalContent.classList.remove('scale-100');
+                discordModalContent.classList.add('scale-95');
+                discordModal.classList.add('opacity-0', 'pointer-events-none');
+            };
+
+            discordModalClose.addEventListener('click', closeDiscordModal);
+            discordModal.addEventListener('click', (e) => {
+                if (e.target === discordModal) {
+                    closeDiscordModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
